@@ -7,6 +7,7 @@
   <title>Crafted Software</title>
 
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
 
   <style>
     @import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
@@ -61,9 +62,17 @@
     i {
       margin-right: 1em;
     }
+    .related {
+      text-align: center;
+    }
     .related i {
       font-size: 3rem;
-      /*margin-right: 0.5rem;*/
+      margin: 0 0.5em;
+      color: white;
+    }
+
+    .alternate {
+      margin: 0 2em;
     }
 
   </style>
@@ -78,12 +87,53 @@
       <i class="fa fa-crop"></i>Crafted Software for the modern web
     </h2>
     <div class="pure-g">
-      <div class="pure-u-3-5">AA</div>
+      <div class="pure-u-3-5">
+        <div class="alternate">
+
+          <div >
+            <h3>
+            Ruby on Rails
+            </h3>
+            <p>rapid application development</p>
+          </div>
+          <div>
+            <h3>
+              Javascript
+            </h3>
+            <p>Enhancing user experience</p>
+          </div>
+          <div>
+            <h3>
+              Javascript
+            </h3>
+            <p>Enhancing user experience</p>
+          </div>
+        </div>
+      </div>
       <div class="pure-u-2-5 related">
-        <i class="fa fa-github"></i>
-        <i class="fa fa-comments"></i>
+        <a href=""><i class="fa fa-github"></i></a>
+        <a href=""><i class="fa fa-comments"></i></a>
+        <a href=""><i class="fa fa-twitter"></i></a>
       </div>
     </div>
+    <h2>
+      <i class="fa fa-crop"></i>Portfolio
+    </h2>
+    <h2>
+      <i class="fa fa-crop"></i>Testimonial
+    </h2>
   </main>
+  <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('.alternate').slick({
+      autoplay: true,
+      autoplaySpeed: 8000,
+      arrows: false,
+      dots: true
+    });
+  });
+  </script>
 </body>
 </html>
