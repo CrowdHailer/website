@@ -14,8 +14,13 @@
       height: 100%;
     }
     body{
-      font:500 14px/21px 'Helvetica Neue', Helvetica, Arials;
-      padding:40px;
+
+      margin: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1em;
+      padding-right: 1em;
+      max-width: 768px;
 
       color: #fff;
       background: #FAC9FF;
@@ -38,15 +43,47 @@
       background-attachment: fixed;
       background-size: cover;
     }
+    header {
+      padding: 0em 2em;
+      border: 2px solid white;
+      background-color:rgba(255,255,255,0.2);
+      border-radius: 2em;
+    }
+
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 100;
+      margin: 0.2em;
+      width: 100%;
+      text-align: center;
+    }
+    i {
+      margin-right: 1em;
+    }
+    .related i {
+      font-size: 3rem;
+      /*margin-right: 0.5rem;*/
+    }
+
   </style>
 
 </head>
 <body>
-  <h1>Welcome to Divshot Hosting!</h1>
-  <p>Make something static!</p>
-  <h2>Should there be something here?</h2>
-  <p><a href="mailto:support@divshot.com">Get Help via Email</a> or <a href="http://docs.divshot.com/guides/common-deploy-issues">Common Deploy Issues Documentation</a></p>
-  <ul>
-  </ul>
+  <header class="pure-g">
+    <h1 class="pure-u">Workshop 14</h1>
+  </header>
+  <main>
+    <h2>
+      <i class="fa fa-crop"></i>Crafted Software for the modern web
+    </h2>
+    <div class="pure-g">
+      <div class="pure-u-3-5">AA</div>
+      <div class="pure-u-2-5 related">
+        <i class="fa fa-github"></i>
+        <i class="fa fa-comments"></i>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
