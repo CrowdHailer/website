@@ -17,7 +17,7 @@
     }
     body{
 
-      color: #fff;
+      color: #116;
       background: #BEF7CD;
       background: -moz-linear-gradient(45deg, #BEF7CD 8%, #00A3EF 91%);
       /* FF3.6+ */
@@ -94,12 +94,24 @@
     }
     .related i {
       font-size: 3rem;
-      margin: 0 0.5em;
-      color: white;
+      margin: 0 0.2em;
+      color: #116;
+    }
+
+    .related i:hover {
+      color: #DEFB66;
     }
 
     .alternate {
       margin: 0 2em;
+    }
+
+    #quotes {
+      color: #446;
+    }
+
+    #quotes i {
+      border-color: #446;
     }
 
   </style>
@@ -148,9 +160,9 @@
         </div>
       </div>
       <div class="pure-u-2-5 related">
-        <a href=""><i class="fa fa-github"></i></a>
-        <a href=""><i class="fa fa-pencil-square-o"></i></a>
-        <a href=""><i class="fa fa-twitter"></i></a>
+        <a href=""><i class="fa fa-fw fa-github"></i></a>
+        <a href=""><i class="fa fa-fw fa-pencil-square-o"></i></a>
+        <a href=""><i class="fa fa-fw fa-twitter"></i></a>
       </div>
     </div>
     <h2>
@@ -168,6 +180,10 @@
     <h2>
       <i class="fa fa-comments"></i>Testimonial
     </h2>
+    <p id="quotes">
+      <i class="fa fa-quote-left fa-3x pull-left fa-border"></i>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, quo et, obcaecati non a nam labore omnis iste ipsum optio maxime facilis soluta beatae inventore voluptatum dignissimos possimus aliquam dolores.
+    </p>
   </main>
   <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js"></script>
