@@ -98,6 +98,31 @@
       color: #116;
     }
 
+    ul.fa-ul {
+      text-align: left;
+      font-size: 2.5rem;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    ul.fa-ul span {
+      opacity: 0;
+      transition: opacity 0.8s linear;
+    }
+    ul.fa-ul li {
+      /*max-width: 1rem;*/
+      /*overflow: hidden;*/
+    }
+    ul.fa-ul li:hover {
+      color: #DEFB66;
+    }
+    ul.fa-ul li:hover span {
+      opacity: 1;
+    }
+    ul.fa-ul i {
+      font-size: 2.5rem;
+
+    }
+
     .related i:hover {
       color: #DEFB66;
     }
@@ -129,7 +154,7 @@
     <h2>
       <i class="fa fa-crop"></i>Quality crafted software for the modern web
     </h2>
-    <div class="pure-g">
+    <!-- <div class="pure-g">
       <div class="pure-u-3-5">
         <div class="alternate">
 
@@ -163,6 +188,44 @@
         <a href=""><i class="fa fa-fw fa-github"></i></a>
         <a href=""><i class="fa fa-fw fa-pencil-square-o"></i></a>
         <a href=""><i class="fa fa-fw fa-twitter"></i></a>
+      </div>
+    </div> -->
+    <div class="pure-g">
+      <div class="pure-u-3-5">
+        <div class="alternate">
+
+          <div >
+            <h3>
+              Ruby on Rails
+            </h3>
+            <p>rapid application development</p>
+          </div>
+          <div>
+            <h3>
+              Javascript
+            </h3>
+            <p>Enhancing user experience</p>
+          </div>
+          <div>
+            <h3>
+              Node
+            </h3>
+            <p>Progressing the in realtime</p>
+          </div>
+          <div>
+            <h3>
+              gulp
+            </h3>
+            <p>lean processing</p>
+          </div>
+        </div>
+      </div>
+      <div class="pure-u-2-5 related">
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-github"></i><span>Github</span></li>
+          <li><i class="fa-li fa fa-pencil-square-o"></i><span>Blog</span></li>
+          <li><i class="fa-li fa fa-twitter"></i><span>Twitter</span></li>
+        </ul>
       </div>
     </div>
     <h2>
