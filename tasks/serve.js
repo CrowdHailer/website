@@ -20,7 +20,6 @@ function startLivereload() {
 
 function notifyLivereload(event) {
     var fileName = require('path').relative('/home/peter/Workshop14/website/www', event.path);
-    console.log(fileName)
     lr.changed({
       body: {
         files: [fileName]
