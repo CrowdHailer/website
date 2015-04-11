@@ -4,7 +4,8 @@
   "description": "First web impression of Workshop 14 Limited",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "share": "divshot deploy"
   },
   "repository": {
     "type": "git",
