@@ -1,6 +1,6 @@
 {
   "name": "workshop14",
-  "root": "./public",
+  "root": "./www",
   "clean_urls": true,
   "error_page": "error.html"
 }
