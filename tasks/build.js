@@ -12,7 +12,7 @@ gulp.task('copy', function () {
   .pipe(gulp.dest('./www'));
 });
 
-gulp.task('build', ['clean', 'copy', 'styles'])
+gulp.task('build', ['clean', 'copy', 'styles', 'scripts'])
 
 gulp.task('watch', function () {
   var core_watcher = gulp.watch('./public/**/*', ['copy'])
@@ -21,6 +21,10 @@ gulp.task('watch', function () {
   });
   var style_watcher = gulp.watch('./assets/styles/**/*', ['styles'])
   style_watcher.on('change', function(event) {
+    console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+  });
+  var script_watcher = gulp.watch('./assets/scripts/**/*', ['scripts'])
+  script_watcher.on('change', function(event) {
     console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
   });
 });
