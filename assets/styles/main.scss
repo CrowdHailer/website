@@ -1,22 +1,28 @@
 @import 'flip';
-
-
-.front, .back {
-  background: green;
+$charcol: #36454F;
+$blue: #00A3EF;
+$sea-green: #BEF7CD;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Tangerine', cursive;
 }
 
 html, body {
     height: 100%;
 }
 
-h1 {
-  color: white;
-  padding: 0.3em;
-  font-size: 300%;
+body {
+  background: $charcol;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  font-family: 'Tangerine', cursive;
+.front, .back {
+  background: linear-gradient(45deg, $sea-green 26%, $blue 91%);
+}
+
+h1 {
+  color: $charcol;
+  text-align: center;
+  padding: 0.3em;
+  font-size: 500%;
 }
