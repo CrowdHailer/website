@@ -13,3 +13,14 @@ gulp.task('copy', function () {
 });
 
 gulp.task('build', ['clean', 'copy', 'styles'])
+
+gulp.task('watch', function () {
+  var core_watcher = gulp.watch('./public/**/*', ['copy'])
+  core_watcher.on('change', function(event) {
+    console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+  });
+  var style_watcher = gulp.watch('./assets/styles/**/*', ['styles'])
+  style_watcher.on('change', function(event) {
+    console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+  });
+});
