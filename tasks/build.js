@@ -8,7 +8,7 @@ gulp.task('clean', function () {
 
 gulp.task('copy', function () {
   gulp.src('./public/**/*', {base: './public'})
-  .pipe(minifyHTML({}))
+  // .pipe(minifyHTML({}))
   .pipe(gulp.dest('./www'));
 });
 
