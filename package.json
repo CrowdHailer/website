@@ -1,0 +1,25 @@
+{
+  "name": "company-website",
+  "version": "0.2.0",
+  "description": "First web impression of Workshop 14 Limited",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/CrowdHailer/website.git"
+  },
+  "keywords": [
+    "Software",
+    "Development",
+    "Craftsman",
+    "Web",
+    "Solutions"
+  ],
+  "author": "Peter Saxton",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/CrowdHailer/website/issues"
+  }
+}
