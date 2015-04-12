@@ -67,9 +67,19 @@ a {
 
 nav {
   position: absolute;
-  right: 0;
   bottom: 0;
-  padding: 0 2em 0.2em 0;
+  width: 100%;
+}
+.next, .previous {
+  padding: 0.2em 2em 0.2em 2em;
+}
+
+.next {
+  float: right;
+}
+
+.previous {
+  float: left;
 }
 
 strong {
