@@ -9,10 +9,21 @@ if (screenfull.enabled) {
 
 var main = document.querySelector('main')
 var navbars = document.querySelectorAll('nav');
+var navbars = [].slice.call(document.querySelectorAll("nav"));
 // var a = ["a", "b", "c"];
-[navbars[0], navbars[1]].forEach(function(element) {
+navbars.forEach(function(element) {
     element.onclick = function(e){
 
       main.classList.toggle('hover')
+    }
+});
+
+
+var items = [].slice.call(document.querySelectorAll("strong"));
+console.log(items)
+items.forEach(function(element) {
+    element.onclick = function(e){
+
+      element.classList.toggle('live')
     }
 });
