@@ -21,11 +21,12 @@ body {
 }
 
 h1 {
-  font-family: 'Tangerine', cursive;
+  font-family: 'Raleway', sans-serif;
   color: $charcol;
   padding: 0.3em 0 0.2em 0;
   margin: 0;
-  font-size: 600%;
+  font-size: 360%;
+  font-weight: 200;
   width: 65%;
   text-align: right;
 }
@@ -35,11 +36,11 @@ p {
   color: $charcol;
   font-size: 160%;
   padding-left: 1em;
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 a {
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: $charcol;
   text-decoration: none;
   font-size: 160%;
