@@ -5,11 +5,11 @@ $sea-green: #BEF7CD;
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Tangerine', cursive;
+  box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
@@ -21,8 +21,45 @@ body {
 }
 
 h1 {
+  font-family: 'Tangerine', cursive;
   color: $charcol;
-  text-align: center;
-  padding: 0.3em;
-  font-size: 500%;
+  padding: 0.3em 0 0.2em 0;
+  margin: 0;
+  font-size: 600%;
+  width: 65%;
+  text-align: right;
+}
+p {
+  width: 65%;
+  text-align: right;
+  color: $charcol;
+  font-size: 160%;
+  padding-left: 1em;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+a {
+  font-family: Tahoma, Geneva, sans-serif;
+  color: $charcol;
+  text-decoration: none;
+  font-size: 160%;
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0 2em 0.2em 0;
+}
+
+strong {
+  display: inline-block;
+  // text-decoration: underline dashed;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+strong.live {
+  transform: scale(8);
+  opacity: 0;
 }
