@@ -30,13 +30,32 @@ h1 {
   width: 65%;
   text-align: right;
 }
-p {
+p, address{
   width: 65%;
   text-align: right;
   color: $charcol;
   font-size: 160%;
   padding-left: 1em;
   font-family: 'Raleway', sans-serif;
+}
+
+address {
+  font-weight: 100;
+  font-size: 120%;
+  a {
+    margin-right: -1em;
+    i {
+      padding-left: 0.5em;
+      transition: color 1s ease;
+    }
+  }
+  a:hover i {
+    color: #DEFB66;
+  }
+}
+
+i {
+  // float: right;
 }
 
 a {
