@@ -23,13 +23,15 @@ body {
 h1 {
   font-family: 'Raleway', sans-serif;
   color: $charcol;
-  padding: 0.3em 0 0.2em 0;
+  padding: 0.3em 1rem 0.2em 1rem;
   margin: 0;
   font-size: 360%;
   font-weight: 200;
   width: 65%;
   text-align: right;
 }
+
+
 p, address{
   width: 65%;
   text-align: right;
@@ -39,6 +41,19 @@ p, address{
   font-family: 'Raleway', sans-serif;
 }
 
+@media all and (orientation: portrait) {
+  h1, p, address {
+    width: 100%;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 300%;
+
+  }
+}
 address {
   font-weight: 100;
   font-size: 120%;
