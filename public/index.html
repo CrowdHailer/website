@@ -46,5 +46,15 @@
         </section>
     </main>
     <script src="scripts/main.js"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script>
+    var body = document.body
+    var front = document.querySelector('.front')
+    console.log(front)
+    var hammertime = new Hammer(front, {});
+hammertime.on('tap', function(ev) {
+    alert('hello');
+});
+    </script>
 </body>
 </html>
