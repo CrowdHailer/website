@@ -51,23 +51,33 @@ p, address{
   font-family: 'Raleway', sans-serif;
 }
 
+
+a {
+  font-family: 'Raleway', sans-serif;
+  color: $charcol;
+  text-decoration: none;
+  font-size: 160%;
+}
+
 @media all and (orientation: portrait) {
   h1, p, address {
     width: 100%;
     padding-right: 3rem;
   }
+  
 
   address a {
-    font-size: 140%;
+    font-size: 120%;
     font-weight: 200;
   }
 }
 
 @media (max-width: 400px) {
   h1 {
-    font-size: 300%;
+    font-size: 260%;
   }
 }
+
 address {
   font-weight: 100;
   font-size: 120%;
@@ -77,13 +87,6 @@ address {
   a:hover i {
     color: #DEFB66;
   }
-}
-
-a {
-  font-family: 'Raleway', sans-serif;
-  color: $charcol;
-  text-decoration: none;
-  font-size: 160%;
 }
 
 nav {

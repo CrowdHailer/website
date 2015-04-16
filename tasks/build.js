@@ -13,15 +13,14 @@ function fileContents(filePath, file) {
 
 gulp.task('copy', function () {
   var sources = gulp.src(['./src/**/*.js', './www/**/*.css']);
-  console.log('boo')
 
-  gulp.src('./public/**/*', {base: './public'})
+  return gulp.src('./public/**/*', {base: './public'})
   .pipe(inject(sources, { transform: fileContents }))
   // .pipe(minifyHTML({}))
   .pipe(gulp.dest('./www'));
 });
 
-gulp.task('build', ['clean', 'styles', 'scripts', 'copy'])
+gulp.task('build', ['styles', 'scripts', 'copy'])
 
 gulp.task('watch', function () {
   var core_watcher = gulp.watch('./public/**/*', ['copy'])

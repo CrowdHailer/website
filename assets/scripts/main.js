@@ -1,11 +1,11 @@
 screenfull = require('screenfull')
 
-if (screenfull.enabled) {
-  var goFS = document.getElementById("goFS");
-   goFS.addEventListener("click", function() {
-    screenfull.request();
-   }, false);
-};
+// if (screenfull.enabled) {
+//   var goFS = document.getElementById("goFS");
+//    goFS.addEventListener("click", function() {
+//     screenfull.request();
+//    }, false);
+// };
 
 var main = document.querySelector('main')
 var navbars = document.querySelectorAll('nav');
