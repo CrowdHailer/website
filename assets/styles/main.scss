@@ -1,7 +1,12 @@
 @import 'flip';
+@import 'icons';
 $charcol: #36454F;
 $blue: #00A3EF;
 $sea-green: #BEF7CD;
+
+.icon {
+  vertical-align: middle;
+}
 
 // $charcol: white;
 // $blue: #00692E;
@@ -67,18 +72,10 @@ address {
   font-size: 120%;
   a {
     margin-right: -1em;
-    i {
-      padding-left: 0.5em;
-      transition: color 1s ease;
-    }
   }
   a:hover i {
     color: #DEFB66;
   }
-}
-
-i {
-  // float: right;
 }
 
 a {
@@ -94,7 +91,7 @@ nav {
   width: 100%;
 }
 .next, .previous {
-  padding: 0.2em 2em 0.2em 2em;
+  padding: 0.4em 1em 0.4em 1em;
 }
 
 .next {
