@@ -119,11 +119,14 @@
     <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
     <script>
     var body = document.body
-    var front = document.querySelector('.front')
-    console.log(front)
-    var hammertime = new Hammer(front, {});
-    hammertime.on('tap', function(ev) {
-        // alert('hello');
+    var hammertime = new Hammer(body, {});
+    hammertime.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+    var main = document.querySelector('main')
+    hammertime.on('swipeleft', function(ev) {
+        main.classList.add('hover')
+    });
+    hammertime.on('swiperight', function(ev) {
+        main.classList.remove('hover')
     });
     </script>
 </body>
