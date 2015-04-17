@@ -29,6 +29,22 @@ body {
   background: linear-gradient(45deg, $sea-green 26%, $blue 91%);
 }
 
+.mission {
+
+  background: linear-gradient(45deg, #0FE36B 26%, #00692E 91%);
+  height: 100%;
+  h1 {
+    color: white;
+    font-size: 700%;
+  }
+
+  p, a {
+    font-size: 210%;
+    color: white;
+    padding-left: 10rem;
+    // font-weight: bold;
+  }
+}
 h1 {
   font-family: 'Raleway', sans-serif;
   color: $charcol;
@@ -64,7 +80,7 @@ a {
     width: 100%;
     padding-right: 3rem;
   }
-  
+
 
   address a {
     font-size: 120%;
