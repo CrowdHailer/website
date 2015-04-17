@@ -1,39 +1,31 @@
 @import 'colors';
 @import 'setup';
+@import 'base';
 @import 'icons';
-@import 'flip';
+// @import 'flip';
 
-html, body {
+.panel {
   height: 100%;
-}
-
-body {
-  background: $charcol;
-}
-
-.front, .back {
-  background: linear-gradient(45deg, $sea-green 26%, $blue 91%);
+  background: linear-gradient(45deg, $sea-green 26%, $dark-green 91%);
 }
 
 .mission {
 
-  background: linear-gradient(45deg, #0FE36B 26%, #00692E 91%);
-  height: 100%;
+
   h1 {
-    color: white;
+    // color: white;
     font-size: 700%;
   }
 
   p, a {
+
     font-size: 210%;
-    color: white;
+    // color: white;
     padding-left: 10rem;
     // font-weight: bold;
   }
 }
 h1 {
-  font-family: 'Raleway', sans-serif;
-  color: $charcol;
   padding: 0.3em 1rem 0.2em 1rem;
   margin: 0;
   font-size: 360%;
@@ -46,20 +38,16 @@ h1 {
 p, address{
   width: 65%;
   text-align: right;
-  color: $charcol;
   font-size: 160%;
   line-height: 1.6;
   padding-left: 1em;
-  font-family: 'Raleway', sans-serif;
 }
 
 
-a {
-  font-family: 'Raleway', sans-serif;
-  color: $charcol;
-  text-decoration: none;
-  font-size: 160%;
-}
+// a {
+//   text-decoration: none;
+//   font-size: 160%;
+// }
 
 @media all and (orientation: portrait) {
   h1, p, address {

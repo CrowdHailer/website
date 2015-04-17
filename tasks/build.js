@@ -15,7 +15,7 @@ gulp.task('copy', function () {
   var sources = gulp.src(['./src/**/*.js', './www/**/*.css']);
 
   return gulp.src('./public/**/*', {base: './public'})
-  .pipe(inject(sources, { transform: fileContents }))
+  // .pipe(inject(sources, { transform: fileContents }))
   // .pipe(minifyHTML({}))
   .pipe(gulp.dest('./www'));
 });
