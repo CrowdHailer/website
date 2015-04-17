@@ -4,9 +4,13 @@
 @import 'icons';
 // @import 'flip';
 
+body {
+  // position: fixed;
+  background: linear-gradient(45deg, $sea-green 26%, $dark-green 91%);
+  background-attachment: fixed;
+}
 .panel {
   height: 100%;
-  background: linear-gradient(45deg, $sea-green 26%, $dark-green 91%);
   position: relative;
 }
 
