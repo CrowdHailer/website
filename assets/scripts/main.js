@@ -19,11 +19,11 @@ navbars.forEach(function(element) {
 });
 
 
-var items = [].slice.call(document.querySelectorAll("strong"));
-console.log(items)
-items.forEach(function(element) {
-    element.onclick = function(e){
-
-      element.classList.toggle('live')
-    }
-});
+// var items = [].slice.call(document.querySelectorAll("strong"));
+// console.log(items)
+// items.forEach(function(element) {
+//     element.onclick = function(e){
+//
+//       element.classList.toggle('live')
+//     }
+// });

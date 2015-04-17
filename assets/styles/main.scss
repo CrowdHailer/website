@@ -7,47 +7,36 @@
 .panel {
   height: 100%;
   background: linear-gradient(45deg, $sea-green 26%, $dark-green 91%);
+  position: relative;
 }
 
-.mission {
-
-
-  h1 {
-    // color: white;
-    font-size: 700%;
-  }
-
-  p, a {
-
-    font-size: 210%;
-    // color: white;
-    padding-left: 10rem;
-    // font-weight: bold;
-  }
+.right-aligned {
+  width: 70%;
+  text-align: right;
+  padding-right: 1rem;
 }
+
 h1 {
-  padding: 0.3em 1rem 0.2em 1rem;
-  margin: 0;
-  font-size: 360%;
-  font-weight: 200;
-  width: 65%;
-  text-align: right;
+  font-size: 600%;
+  padding: 3rem 1rem 2rem 1rem;
 }
 
-
-p, address{
-  width: 65%;
-  text-align: right;
-  font-size: 160%;
+p{
+  font-size: 200%;
+  padding-left: 4em;
   line-height: 1.6;
-  padding-left: 1em;
 }
-
-
-// a {
-//   text-decoration: none;
-//   font-size: 160%;
-// }
+.separated {
+  border-top: 2px solid $charcol;
+}
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: underline;
+  }
+}
 
 @media all and (orientation: portrait) {
   h1, p, address {
@@ -58,7 +47,7 @@ p, address{
 
   address a {
     font-size: 120%;
-    font-weight: 200;
+
   }
 }
 
@@ -83,6 +72,7 @@ nav {
   position: absolute;
   bottom: 0;
   width: 100%;
+    font-size: 210%;
 }
 .next, .previous {
   padding: 0.4em 1em 0.4em 1em;
@@ -94,16 +84,4 @@ nav {
 
 .previous {
   float: left;
-}
-
-strong {
-  display: inline-block;
-  // text-decoration: underline dashed;
-  transition: 0.8s;
-  cursor: pointer;
-}
-
-strong.live {
-  transform: scale(8);
-  opacity: 0;
 }
