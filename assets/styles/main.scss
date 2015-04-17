@@ -19,60 +19,46 @@
 h1 {
   font-size: 600%;
   padding: 3rem 1rem 2rem 1rem;
+  font-weight: 200;
 }
 
-p{
+p, h2{
+  font-weight: 200;
   font-size: 200%;
   padding-left: 4em;
   line-height: 1.6;
 }
-.separated {
-  border-top: 2px solid $charcol;
-}
-a {
-  font-weight: bold;
-  text-decoration: none;
-  color: inherit;
-  &:hover {
-    text-decoration: underline;
-  }
-}
 
-@media all and (orientation: portrait) {
-  h1, p, address {
-    width: 100%;
-    padding-right: 3rem;
-  }
-
-
-  address a {
-    font-size: 120%;
-
-  }
-}
-
-@media (max-width: 400px) {
-  h1 {
-    font-size: 260%;
-  }
+h2 {
+  font-size: 300%;
 }
 
 address {
-  font-weight: 100;
-  font-size: 120%;
-  a {
-    margin-right: -1em;
+  font-size: 250%;
+  line-height: 1.6;
+}
+
+.separated {
+  border-top: 2px solid $charcol;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &.strong {
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+    }
   }
-  a:hover i {
-    color: #DEFB66;
-  }
+
 }
 
 nav {
   position: absolute;
   bottom: 0;
   width: 100%;
-    font-size: 210%;
+  font-size: 200%;
 }
 .next, .previous {
   padding: 0.4em 1em 0.4em 1em;
