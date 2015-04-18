@@ -29,7 +29,6 @@ professionalLink.onclick = function (e){
 }
 
 var backButton = professionalSection.querySelector('a[href="#front-section"]')
-console.log(backButton)
 backButton.onclick = function (e){
   console.log('hello')
   front.classList.remove('hidden')
