@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,200);
 @import 'colors';
 @import 'setup';
 @import 'base';
@@ -19,14 +20,34 @@ body {
   text-align: right;
   padding-right: 1rem;
 }
+@media screen and (orientation:portrait) {
+  .right-aligned {
+    width: 100%;
+    text-align: center;
+    padding-right: 2rem;
+  }
+  p.right-aligned {
+    padding-left: 2rem;
+  }
+}
 
 h1 {
   font-size: 600%;
-  padding: 3rem 1rem 2rem 1rem;
+  padding: 3rem 1rem 6rem 1rem;
   font-weight: 200;
 }
+@media screen and (min-width: 80em) {
+  h1 {
+    font-size: 800%;
+  }
+}
 
-p, h2{
+.section-header {
+  font-size: 400%;
+  padding: 2rem 1rem 1.5rem 1rem;
+}
+
+p, .subheading {
   font-weight: 200;
   font-size: 200%;
   padding-left: 4em;
