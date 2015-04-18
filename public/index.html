@@ -71,13 +71,13 @@
 
 
     <section class="panel front" id="front-section">
-        <h1 class="right-aligned">Workshop 14</h1>
+        <h1 class="right-aligned company-header">Workshop 14</h1>
         <h3 class="right-aligned subheading">Crafting <a class="strong" href="#professional-section">professional</a> software for <a class="strong" href="#fresh-section">fresh</a> and <a href="#fast-section" class="strong">fast</a> web solutions</h2>
         <p class="right-aligned separated subheading">
             What we've been up to: <a href="" class="strong">blog</a>
         </p>
-        <nav>
-            <a class="next" href="#contact-section">
+        <nav class="footer">
+            <a class="right item" href="#contact-section">
                 <span>Contact</span>
                 <svg class="icon icon-share-square-o-left">
                     <use xlink:href="#icon-share-square-o-left"></use>
@@ -88,20 +88,19 @@
 
     <section class="panel content" id="professional-section">
         <h1 class="right-aligned section-header">Professional &amp; Collaborative</h1>
-        <p class="right-aligned">
-            By entering productive partnerships we strive to deliver more than functional software. By advising on the whole project we can incorperate many excellent services and focus on delivering your buisnesses unique value proposition. Using modern powerful tools our work is necessarily sophisticated, yet simple changes should remain simple. A collaborative workflow makes projects nimble when changes occur.
+        <p class="right-aligned section-content">
+            Through productive partnerships we strive to deliver more than functional software. By advising on the whole project we can incorperate excellent services and focus on delivering your buisnesses unique value proposition. Using modern powerful tools our work is necessarily sophisticated, yet simple changes should remain simple. A collaborative workflow makes projects nimble when changes occur.
         </p>
         <p class="right-aligned separated">
             How about it partner?<br>
-            <!-- Contact to find out how we can work together -->
             <a href="">version_control_is_my_bag@workshop14.io</a>
         </p>
 
-        <nav>
-            <a class="previous" href="#front-section">
-                <svg class="icon icon-share-square-o">
+        <nav  class="footer">
+            <a class="right item" href="#front-section">
+                <!-- <svg class="icon icon-share-square-o">
                     <use xlink:href="#icon-share-square-o"></use>
-                </svg>
+                </svg> -->
                 <span>Back</span>
             </a>
         </nav>
@@ -109,7 +108,7 @@
 
     <section class="panel content" id="fresh-section">
         <h1 class="right-aligned section-header">Fresh &amp; Relevant</h1>
-        <p class="right-aligned">
+        <p class="right-aligned section-content">
             What does the future for your buisness look like? Where are you customers now? By focusing on the revalent questions we can create up to date future facing applications. We adhead to the latest standards and value accissiblity. We are able to go beyond stock solutions without chaseing the newest fad.
         </p>
         <p class="right-aligned separated">
@@ -117,23 +116,38 @@
             <a href="">ie8_thanks_for_the_ride@workshop14.io</a>
         </p>
 
-
+        <nav  class="footer">
+            <a class="right item" href="#front-section">
+                <!-- <svg class="icon icon-share-square-o">
+                    <use xlink:href="#icon-share-square-o"></use>
+                </svg> -->
+                <span>Back</span>
+            </a>
+        </nav>
     </section>
 
     <section class="panel content" id="fast-section">
         <h1 class="right-aligned section-header">Fast &amp; Robust</h1>
-        <p class="right-aligned">
+        <p class="right-aligned section-content">
             A zippy experience for your users should come as standard. The same should be true for you and your team. To be fast you have to up the things that are slow. We will be rigorous in removing bloat from products and eliminating ineffeciencies in out work flow. Reassurance by testing and monitoring code from the start means more time spent moving forwards and less time revisiting work.
         </p>
         <p class="right-aligned separated">
             Getting up to date. Contact us
             <a href="mailto:peter@workshop14.io">does_my_gif_look_big_in_this@workshop14.io</a>
         </p>
+        <nav  class="footer">
+            <a class="right item" href="#front-section">
+                <!-- <svg class="icon icon-share-square-o">
+                    <use xlink:href="#icon-share-square-o"></use>
+                </svg> -->
+                <span>Back</span>
+            </a>
+        </nav>
     </section>
 
     <section class="panel back" id="contact-section">
-        <h1 class="right-aligned">Workshop 14</h1>
-        <address class="right-aligned">
+        <!-- <h1 class="right-aligned company-header">Workshop 14</h1> -->
+        <address class="right-aligned address">
             <a href="mailto:peter@workshop14.io">
                 <span class="mls">peter@workshop14.io</span>
                 <svg class="icon icon-envelope-o">
@@ -160,8 +174,8 @@
             </a><br>
         </address>
         <p class="right-aligned separated address">Peter Saxton</p>
-        <nav>
-            <a class="previous" href="#front-section">
+        <nav class="footer">
+            <a class="left item" href="#front-section">
                 <svg class="icon icon-share-square-o">
                     <use xlink:href="#icon-share-square-o"></use>
                 </svg>
@@ -194,7 +208,7 @@
     var hammertime = new Hammer(body, {});
     var front = document.querySelector('.front')
     var back = document.querySelector('.back')
-    hammertime.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+    hammertime.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
     var main = document.querySelector('main')
     hammertime.on('swipeleft', function(ev) {
         front.classList.add('flipped')
@@ -206,9 +220,8 @@
     });
     var professionalLink = document.querySelector('a[href="#professional-section"]')
     var professionalSection = document.querySelector('#professional-section')
-    hammertime.on('swipeup', function(ev) {
-        console.log('hello')
-        main.classList.remove('hover')
+    hammertime.on('swipedown', function(ev) {
+        professionalSection.classList.remove('active')
         front.classList.remove('hidden')
       professionalSection.classList.remove('active')
     });

@@ -1,11 +1,11 @@
 screenfull = require('screenfull')
 
-// if (screenfull.enabled) {
-//   var goFS = document.getElementById("goFS");
-//    goFS.addEventListener("click", function() {
-//     screenfull.request();
-//    }, false);
-// };
+if (screenfull.enabled) {
+  var goFS = document.querySelector("body");
+   goFS.addEventListener("click", function() {
+    screenfull.request();
+   }, false);
+};
 
 var front = document.querySelector('.front')
 var back = document.querySelector('.back')
@@ -29,11 +29,40 @@ professionalLink.onclick = function (e){
 }
 
 var backButton = professionalSection.querySelector('a[href="#front-section"]')
-console.log(backButton)
 backButton.onclick = function (e){
   console.log('hello')
   front.classList.remove('hidden')
   professionalSection.classList.remove('active')
+}
+
+var freshLink = document.querySelector('a[href="#fresh-section"]')
+var freshSection = document.querySelector('#fresh-section')
+// console.log(freshLink)
+freshLink.onclick = function (e){
+  front.classList.add('hidden')
+  freshSection.classList.add('active')
+}
+
+var backfreshButton = freshSection.querySelector('a[href="#front-section"]')
+backfreshButton.onclick = function (e){
+  console.log('hello')
+  front.classList.remove('hidden')
+  freshSection.classList.remove('active')
+}
+
+var fastLink = document.querySelector('a[href="#fast-section"]')
+var fastSection = document.querySelector('#fast-section')
+// console.log(fastLink)
+fastLink.onclick = function (e){
+  front.classList.add('hidden')
+  fastSection.classList.add('active')
+}
+
+var backfastButton = fastSection.querySelector('a[href="#front-section"]')
+backfastButton.onclick = function (e){
+  console.log('hello')
+  front.classList.remove('hidden')
+  fastSection.classList.remove('active')
 }
 // var items = [].slice.call(document.querySelectorAll("strong"));
 // console.log(items)

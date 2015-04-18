@@ -7,3 +7,29 @@
 .icon {
   vertical-align: middle;
 }
+
+html, body {
+  height: 100%;
+  color: $charcol;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fine {
+  font-family: $fine-font;
+  font-weight: 200;
+}
+
+.strong {
+  font-weight: bold;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.separated {
+  border-top: 2px solid $charcol;
+}
