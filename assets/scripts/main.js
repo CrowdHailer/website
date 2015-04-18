@@ -34,6 +34,36 @@ backButton.onclick = function (e){
   front.classList.remove('hidden')
   professionalSection.classList.remove('active')
 }
+
+var freshLink = document.querySelector('a[href="#fresh-section"]')
+var freshSection = document.querySelector('#fresh-section')
+// console.log(freshLink)
+freshLink.onclick = function (e){
+  front.classList.add('hidden')
+  freshSection.classList.add('active')
+}
+
+var backfreshButton = freshSection.querySelector('a[href="#front-section"]')
+backfreshButton.onclick = function (e){
+  console.log('hello')
+  front.classList.remove('hidden')
+  freshSection.classList.remove('active')
+}
+
+var fastLink = document.querySelector('a[href="#fast-section"]')
+var fastSection = document.querySelector('#fast-section')
+// console.log(fastLink)
+fastLink.onclick = function (e){
+  front.classList.add('hidden')
+  fastSection.classList.add('active')
+}
+
+var backfastButton = fastSection.querySelector('a[href="#front-section"]')
+backfastButton.onclick = function (e){
+  console.log('hello')
+  front.classList.remove('hidden')
+  fastSection.classList.remove('active')
+}
 // var items = [].slice.call(document.querySelectorAll("strong"));
 // console.log(items)
 // items.forEach(function(element) {
