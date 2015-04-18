@@ -1,13 +1,13 @@
 .company-header {
   @extend .fine;
   font-size: 340%;
-  padding: 2rem 0 2rem 0;
+  padding: 0.8rem 0 0.8rem 0;
 }
 
 .subheading {
   @extend .fine;
   font-size: 160%;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 .footer {
@@ -43,10 +43,8 @@
   .right-aligned {
     width: 100%;
     text-align: center;
-    padding-right: 2rem;
-  }
-  p.right-aligned, .subheading.right-aligned {
-    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 
