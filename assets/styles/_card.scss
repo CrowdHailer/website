@@ -10,8 +10,24 @@
   line-height: 1.6;
 }
 
-.separated {
-  border-top: 2px solid $charcol;
+.footer {
+  @extend .fine;
+  font-size: 160%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  .item {
+    margin: 0;
+    padding: 0.4em 1em 0.4em 1em;
+  }
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
 }
 
 @media screen and (orientation:landscape) {
