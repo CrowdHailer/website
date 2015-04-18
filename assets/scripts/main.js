@@ -1,11 +1,11 @@
 screenfull = require('screenfull')
 
-// if (screenfull.enabled) {
-//   var goFS = document.getElementById("goFS");
-//    goFS.addEventListener("click", function() {
-//     screenfull.request();
-//    }, false);
-// };
+if (screenfull.enabled) {
+  var goFS = document.querySelector("body");
+   goFS.addEventListener("click", function() {
+    screenfull.request();
+   }, false);
+};
 
 var front = document.querySelector('.front')
 var back = document.querySelector('.back')
