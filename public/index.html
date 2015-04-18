@@ -97,7 +97,14 @@
             <a href="">version_control_is_my_bag@workshop14.io</a>
         </p>
 
-
+        <nav>
+            <a class="previous" href="#front-section">
+                <svg class="icon icon-share-square-o">
+                    <use xlink:href="#icon-share-square-o"></use>
+                </svg>
+                <span>Back</span>
+            </a>
+        </nav>
     </section>
 
     <section class="panel content" id="fresh-section">
@@ -185,13 +192,25 @@
     <script>
     var body = document.body
     var hammertime = new Hammer(body, {});
+    var front = document.querySelector('.front')
+    var back = document.querySelector('.back')
     hammertime.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
     var main = document.querySelector('main')
     hammertime.on('swipeleft', function(ev) {
-        main.classList.add('hover')
+        front.classList.add('flipped')
+        back.classList.add('flipped')
     });
     hammertime.on('swiperight', function(ev) {
+        front.classList.remove('flipped')
+        back.classList.remove('flipped')
+    });
+    var professionalLink = document.querySelector('a[href="#professional-section"]')
+    var professionalSection = document.querySelector('#professional-section')
+    hammertime.on('swipeup', function(ev) {
+        console.log('hello')
         main.classList.remove('hover')
+        front.classList.remove('hidden')
+      professionalSection.classList.remove('active')
     });
     </script>
 </body>

@@ -20,7 +20,21 @@ navbars.forEach(function(element) {
     }
 });
 
+var professionalLink = document.querySelector('a[href="#professional-section"]')
+var professionalSection = document.querySelector('#professional-section')
+// console.log(professionalLink)
+professionalLink.onclick = function (e){
+  front.classList.add('hidden')
+  professionalSection.classList.add('active')
+}
 
+var backButton = professionalSection.querySelector('a[href="#front-section"]')
+console.log(backButton)
+backButton.onclick = function (e){
+  console.log('hello')
+  front.classList.remove('hidden')
+  professionalSection.classList.remove('active')
+}
 // var items = [].slice.call(document.querySelectorAll("strong"));
 // console.log(items)
 // items.forEach(function(element) {

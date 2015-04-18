@@ -132,6 +132,7 @@ nav {
     max-height: 0%;
     // max-width: 0%;
   	transition: 0.6s;
+  	z-index: 4;
     &.active {
       max-height: 100%;
       // max-width: 100%;
