@@ -51,10 +51,6 @@ address {
   line-height: 1.4;
 }
 
-// TODO move
-.content .separated {
-  border-top: 2px solid white;
-}
 
 @media screen and (orientation:landscape) {
   .right-aligned {
@@ -75,6 +71,13 @@ address {
 }
 
 @media screen and (max-width: 64em) {
+  // TODO move
+  .content .separated {
+    border-top: 2px solid white;
+  }
+  .details {
+    display: none;
+  }
   body {
     background: $charcol;
     perspective: 1000;

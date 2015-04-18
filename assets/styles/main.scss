@@ -4,65 +4,60 @@
 @import 'icons';
 @import 'card';
 
-// @import 'flip';
+@media screen and (min-width: 64em) {
+  body {
+    background: linear-gradient(45deg, $sea-green 26%, $dark-green 91%);
+    background-attachment: fixed;
+  }
 
-// body {
-//   background: linear-gradient(45deg, $sea-green 26%, $dark-green 91%);
-//   background-attachment: fixed;
-// }
-// .panel {
-//   height: 100%;
-//   position: relative;
-// }
-//
+  .panel {
+    height: 100%;
+    position: relative;
+  }
 
-//
-// h1 {
-//   font-size: 600%;
-//   padding: 3rem 1rem 6rem 1rem;
-//   font-weight: 200;
-// }
-// @media screen and (min-width: 80em) {
-//   h1 {
-//     font-size: 800%;
-//   }
-// }
-//
-// .section-header {
-//   font-size: 320%;
-//   padding: 2rem 1rem 1.5rem 1rem;
-// }
-//
-// p {
-//   font-size: 170%;
-//   line-height: 1.4;
-// }
+  .company-header {
+    font-size: 600%;
+    padding: 3rem 1rem 3rem 1rem;
+  }
 
-//
-// p, .subheading {
-//   font-weight: 200;
-//   padding-left: 4em;
-// }
-// @media screen and (min-width: 80em) {
-//   .section-header {
-//     font-size: 400%;
-//   }
-//   p, .subheading {
-//     font-weight: 200;
-//     font-size: 200%;
-//     padding-left: 4em;
-//     line-height: 1.6;
-//   }
-// }
-//
-// h2 {
-//   font-size: 300%;
-// }
-//
-// address {
-//   font-size: 250%;
-//   line-height: 1.6;
-// }
-// .address {
-//   font-size: 250%;
-// }
+  .subheading {
+    font-size: 240%;
+    line-height: 1.6;
+  }
+
+  .footer {
+    font-size: 240%;
+  }
+
+  .section-header {
+    font-size: 320%;
+    padding: 2rem 0 1.5rem 0;
+  }
+
+  .section-content {
+    font-size: 170%;
+    line-height: 1.4;
+  }
+
+  address {
+    font-size: 250%;
+    line-height: 1.6;
+  }
+  .address {
+    font-size: 250%;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .company-header {
+    font-size: 800%;
+  }
+
+  .subheading {
+    font-size: 300%;
+  }
+
+  .section-header {
+    font-size: 400%;
+  }
+}
