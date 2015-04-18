@@ -93,7 +93,7 @@ address {
   }
 
   .content {
-    background: $dark-green;
+    background: $blue;
     color: white;
     position: absolute;
   	bottom: 0;
@@ -112,7 +112,7 @@ address {
     }
   }
   .front, .back {
-    background: linear-gradient(45deg, $sea-green 26%, $dark-green 91%);
+    background: linear-gradient(45deg, $sea-green 26%, $blue 91%);
   	backface-visibility: hidden;
   	transition: 0.6s;
   	transform-style: preserve-3d;
