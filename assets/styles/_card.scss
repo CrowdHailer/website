@@ -1,13 +1,37 @@
 .company-header {
   @extend .fine;
-  font-size: 320%;
-  padding: 3rem 1rem 2rem 1rem;
+  font-size: 340%;
+  padding: 2rem 0 2rem 0;
 }
 
-.right-aligned {
-  width: 70%;
-  text-align: right;
-  padding-right: 1rem;
+.subheading {
+  @extend .fine;
+  font-size: 160%;
+  line-height: 1.6;
+}
+
+.separated {
+  border-top: 2px solid $charcol;
+}
+
+@media screen and (orientation:landscape) {
+  .right-aligned {
+    min-width: 420px;
+    margin-right: 30%;
+    text-align: right;
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (orientation:portrait) {
+  .right-aligned {
+    width: 100%;
+    text-align: center;
+    padding-right: 2rem;
+  }
+  p.right-aligned, .subheading.right-aligned {
+    padding-left: 2rem;
+  }
 }
 
 @media screen and (max-width: 64em) {

@@ -13,7 +13,19 @@ html, body {
   color: $charcol;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .fine {
   font-family: $fine-font;
   font-weight: 200;
+}
+
+.strong {
+  font-weight: bold;
+  &:hover {
+    text-decoration: underline;
+  }
 }
