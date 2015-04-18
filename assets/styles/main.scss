@@ -6,7 +6,7 @@
 
 @media screen and (min-width: 64em) {
   body {
-    background: linear-gradient(45deg, $sea-green 26%, $dark-green 91%);
+    background: linear-gradient(45deg, $sea-green 26%, $blue 91%);
     background-attachment: fixed;
   }
 
@@ -27,6 +27,7 @@
 
   .footer {
     font-size: 240%;
+    background: $sea-green;
   }
 
   .section-header {
