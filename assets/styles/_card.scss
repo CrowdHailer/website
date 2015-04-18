@@ -30,6 +30,16 @@
   float: left;
 }
 
+.section-header {
+  @extend .fine;
+  font-size: 190%;
+  padding: 0.8rem 0 0.8rem 0;
+}
+
+.section-content {
+  @extend .fine;
+}
+
 @media screen and (orientation:landscape) {
   .right-aligned {
     min-width: 420px;
@@ -81,7 +91,7 @@
   	left: 0;
   	width: 100%;
   	height: 100%;
-    &.hidden {
+    &.hidden * {
       opacity: 0;
     }
   }
