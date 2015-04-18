@@ -193,7 +193,7 @@
     var hammertime = new Hammer(body, {});
     var front = document.querySelector('.front')
     var back = document.querySelector('.back')
-    hammertime.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+    hammertime.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
     var main = document.querySelector('main')
     hammertime.on('swipeleft', function(ev) {
         front.classList.add('flipped')
@@ -205,8 +205,8 @@
     });
     var professionalLink = document.querySelector('a[href="#professional-section"]')
     var professionalSection = document.querySelector('#professional-section')
-    hammertime.on('swipeup', function(ev) {
-        main.classList.remove('hover')
+    hammertime.on('swipedown', function(ev) {
+        professionalSection.classList.remove('active')
         front.classList.remove('hidden')
       professionalSection.classList.remove('active')
     });
