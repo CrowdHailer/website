@@ -7,3 +7,13 @@
 .icon {
   vertical-align: middle;
 }
+
+html, body {
+  height: 100%;
+  color: $charcol;
+}
+
+.fine {
+  font-family: $fine-font;
+  font-weight: 200;
+}
