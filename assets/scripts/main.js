@@ -7,14 +7,16 @@ screenfull = require('screenfull')
 //    }, false);
 // };
 
-var main = document.querySelector('main')
+var front = document.querySelector('.front')
+var back = document.querySelector('.back')
 var navbars = document.querySelectorAll('nav');
-var navbars = [].slice.call(document.querySelectorAll("nav"));
+var navbars = [].slice.call(document.querySelectorAll("nav a"));
 // var a = ["a", "b", "c"];
 navbars.forEach(function(element) {
     element.onclick = function(e){
 
-      main.classList.toggle('hover')
+      front.classList.toggle('flipped')
+      back.classList.toggle('flipped')
     }
 });
 
