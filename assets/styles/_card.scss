@@ -61,6 +61,8 @@
 @media screen and (max-width: 64em) {
   body {
     background: $charcol;
+    perspective: 1000;
+  	transform-style: preserve-3d;
   }
 
   .content {
