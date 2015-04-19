@@ -18,3 +18,10 @@ Uses gulp to combine and minify js, css and html. gulp watch used for developmen
 
 #### Flip effect
 An excellent flip effect describe by [David walsh](http://davidwalsh.name/css-flip). Used for small screens.
+
+#### Upcoming
+1. Content sections css transform not animated height
+2. Portfolio
+3. History api and internal linking
+4. Not google analytics
+5. Link to resources github notepad
