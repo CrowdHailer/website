@@ -9,6 +9,14 @@ html, body {
   color: $charcol;
 }
 
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
 .icon {
 	display: inline-block;
 	width: 1em;
@@ -40,14 +48,24 @@ a {
   font-weight: bold;
 }
 
+@media screen and (orientation:landscape) {
+  .right-aligned {
+    min-width: 420px;
+    margin-right: 30%;
+    text-align: right;
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (orientation:portrait) {
+  .right-aligned {
+    width: 100%;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
 .separated {
   border-top: 2px solid $charcol;
-}
-
-.right {
-  float: right;
-}
-
-.left {
-  float: left;
 }
