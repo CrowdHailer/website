@@ -8,6 +8,8 @@
   @extend .fine;
   font-size: 160%;
   line-height: 1.4;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .footer {
@@ -38,7 +40,6 @@
   @extend .fine;
   font-size: 180%;
   line-height: 1.4;
-  margin-top: 1em;
   margin-bottom: 0.5em;
   padding-right: 2em;
   .icon {
@@ -51,8 +52,58 @@
   }
 }
 
-.address {
+@media screen and (min-width: 25.5em) {
+
+  .subheading, .footer {
+    font-size: 200%;
+  }
+
+  .section-heading {
+    font-size: 280%;
+  }
+
+  .section-content {
+    font-size: 140%
+  }
 }
+
+@media screen and (min-width: 37.5em) and (orientation:portrait) {
+
+  .company-header {
+    font-size: 480%;
+  }
+
+  .subheading, .footer {
+    font-size: 240%;
+  }
+
+  .section-heading {
+    font-size: 320%;
+  }
+
+  .section-content {
+    font-size: 180%
+  }
+}
+
+@media screen and (min-width: 52em) and (orientation:landscape) {
+  .company-header {
+    font-size: 480%;
+  }
+
+  .subheading, .footer {
+    font-size: 240%;
+  }
+
+  .section-heading {
+    font-size: 320%;
+  }
+
+  .section-content {
+    font-size: 180%
+  }
+}
+
 
 @media screen and (max-width: 63.9375em) {
   // TODO move
