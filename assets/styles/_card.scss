@@ -33,11 +33,13 @@
 .section-header {
   @extend .fine;
   font-size: 190%;
-  padding: 0.8rem 0 0.8rem 0;
+  padding: 0.8rem 0 0.5rem 0;
 }
 
 .section-content {
   @extend .fine;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 address {
