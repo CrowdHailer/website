@@ -5,7 +5,7 @@ var prefix = require('gulp-autoprefixer');
 gulp.task('styles', function () {
     return gulp.src('assets/styles/main.scss')
         .pipe(sass(
-          // {outputStyle: 'compressed'}
+          {outputStyle: 'compressed'}
         ))
         .pipe(prefix())
         .pipe(gulp.dest('www/styles'));
