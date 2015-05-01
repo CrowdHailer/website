@@ -25,3 +25,4 @@ An excellent flip effect describe by [David walsh](http://davidwalsh.name/css-fl
 3. History api and internal linking
 4. Not google analytics
 5. Link to resources github notepad
+6. full page scrolling, like [this](https://github.com/alvarotrigo/fullPage.js/)
