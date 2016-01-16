@@ -8,14 +8,6 @@ Crafting professional software for fast and fresh web solutions.
 Checkout the latest page speed insites for the development page.
 [speed](https://developers.google.com/speed/pagespeed/insights/?url=development.workshop14.divshot.io)
 
-#### Hosted on Divshot
-
-#### Built with gulp
-Uses gulp to combine and minify js, css and html. gulp watch used for development. gulp tasks wrapped in npm tasks.
-
-`npm run share` build and upload to divshot development
-`npm run development` Serve and watch for changes
-
 #### Flip effect
 An excellent flip effect describe by [David walsh](http://davidwalsh.name/css-flip). Used for small screens.
 
@@ -26,3 +18,4 @@ An excellent flip effect describe by [David walsh](http://davidwalsh.name/css-fl
 4. Not google analytics
 5. Link to resources github notepad
 6. full page scrolling, like [this](https://github.com/alvarotrigo/fullPage.js/)
+7. app cache for speed
