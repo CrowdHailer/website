@@ -5,7 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "rm -rf www && mkdir www",
-    "build": "cp assets/*.html assets/CNAME www/"
+    "build": "cp assets/*.html assets/CNAME www/",
+    "predeploy": "npm run build",
+    "deploy": "surge www"
   },
   "repository": {
     "type": "git",
