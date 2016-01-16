@@ -5,7 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "rm -rf www && mkdir www",
-    "build": "cp assets/*.html assets/CNAME www/",
+    "build": "npm run build:assets && npm run build:styles",
+    "build:assets": "cp assets/*.html assets/CNAME www/",
+    "build:styles": "node-sass assets/styles/index.scss > www/index.css",
     "predeploy": "npm run build",
     "deploy": "surge www"
   },
@@ -25,6 +27,7 @@
     "url": "https://github.com/CrowdHailer/website/issues"
   },
   "devDependencies": {
+    "node-sass": "^3.4.2",
     "surge": "^0.17.5"
   },
   "dependencies": {
