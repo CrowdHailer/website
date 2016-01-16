@@ -9,7 +9,9 @@
     "build:assets": "cp assets/*.html assets/*.png assets/*.svg assets/CNAME www/",
     "build:styles": "node-sass assets/styles/index.scss > www/index.css",
     "predeploy": "npm run build",
-    "deploy": "surge www"
+    "deploy": "surge www",
+    "profile": "psi workshop14.io",
+    "profile:desktop": "psi --strategy desktop workshop14.io"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,7 @@
   },
   "devDependencies": {
     "node-sass": "^3.4.2",
+    "psi": "^2.0.2",
     "surge": "^0.17.5"
   },
   "dependencies": {
