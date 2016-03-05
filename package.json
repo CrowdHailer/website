@@ -11,7 +11,9 @@
     "predeploy": "npm run build",
     "deploy": "surge www",
     "profile": "psi workshop14.io",
-    "profile:desktop": "psi --strategy desktop workshop14.io"
+    "profile:desktop": "psi --strategy desktop workshop14.io",
+    "prestart": "npm run build",
+    "start": "harp server www"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,7 @@
     "url": "https://github.com/CrowdHailer/website/issues"
   },
   "devDependencies": {
+    "harp": "^0.20.1",
     "node-sass": "^3.4.2",
     "psi": "^2.0.2",
     "surge": "^0.17.5"
